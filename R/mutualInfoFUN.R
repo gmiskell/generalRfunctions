@@ -14,8 +14,8 @@ mutualInfoFUN <- function(x, obs, comparison.value, bin = 5){
   # load libraries
   library(tidyverse); library(entropy); library(infotheo);
   
-  x$obs <- x[, obs]
-  x$comparison.value <- x[, comparison.value]
+  x$obs <- x[[obs]]
+  x$comparison.value <- x[[comparison.value]]
   
   # set binning profile - this makes bins of the specified size
   b <- c(0, bin * (1:max(x$obs)))

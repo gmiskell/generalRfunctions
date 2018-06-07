@@ -15,8 +15,8 @@ fiveMetricFUN <- function(x, obs, comparison.value, bin = 2){
   library(tidyverse)
   
   x <- as.data.frame(x)
-  x$obs <- x[, obs]
-  x$comparison.value <- x[, comparison.value]
+  x$obs <- x[[obs]]
+  x$comparison.value <- x[[comparison.value]]
   
   # load each function
   limitOfDetection <- function(x, obs, comparison.value, bin = bin){

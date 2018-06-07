@@ -16,7 +16,7 @@ IoA <- function(x, obs, comparison.value, date, window.size){
   
   # specify variables in x
   x <- as.data.frame(x)
-  x$obs <- x[, obs]; x$comparison.value <- x[, comparison.value]; x$date <- x[, date]
+  x$obs <- x[[obs]]; x$comparison.value <- x[[comparison.value]]; x$date <- x[[date]]
   
   # arrange data by date
   x <- x %>%
