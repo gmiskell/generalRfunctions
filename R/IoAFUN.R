@@ -12,7 +12,7 @@
 IoA <- function(x, obs, comparison.value, date, window.size){
   
   # load packages
-  library(zoo);library(hydroGOF);library;library(tidyverse);
+  library(zoo);library(hydroGOF);library(tidyverse);
   
   # specify variables in x
   x <- as.data.frame(x)
